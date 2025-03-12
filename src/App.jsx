@@ -2,7 +2,10 @@
 // import Netflixseries from "./component/Netflixseries";
 // import Profile from "./component/Profile";
 
-import { Todo } from "./projects/Todo/Todo";
+import { ShortCircuit } from "./component/ShortCircuit";
+
+// import { Keys } from "./keys";
+// import { Todo } from "./projects/Todo/Todo";
 
 // import { Toggleswitch } from "./projects/Toggleswitch/Toggleswitch";
 
@@ -36,7 +39,9 @@ export const App = () => {
       {/* <Sibling /> */}
       {/* <LiftstateUp /> */}
       {/* <Toggleswitch/> */}
-      <Todo/>
+      {/* <Keys/> */}
+      <ShortCircuit />
+      {/* <Todo/> */}
       {/* <State2 /> */}
       {/* <Table /> */}
     </>
