@@ -200,6 +200,7 @@ How state works
 
 function App(){
 return (
+
 <div>
 <ParentComponent>
 <ChildComponent />
@@ -263,10 +264,9 @@ if expression 1 is true then return true else return expression 2
 const res=false || 'Hello'->'Hello'
 const res=true || 'world'->true
 
-if expression 1 is false return expression 1 otherwise return expression2 
+if expression 1 is false return expression 1 otherwise return expression2
 const res=true && 'Hello'->'Hello'
 const res=false && 'world'->false
-
 
 Nullish Coalescing (??) expression
 
@@ -277,4 +277,28 @@ Ruke If expression 1 is not null or undefined ,returned expression .Otherwise re
 const result=null ?? 'Hello'->Hello
 const res1=undefined ?? 'world'->world
 const res3='' ?? 'fallback'->''
+
 <!-- short circuit evaluation -->
+
+<!-- Rules for react Hooks -->
+
+1)Hooks let you use different React features from your components
+2)It starts with `use` prefix ex(useState,useEffect,UseReducer)
+3)Hooks are used in the top level of the components
+4)We can cretes Hooks in react components or custom Hooks
+
+<!-- Rules for react Hooks -->
+
+<!-- useState() Hooks -->
+
+1)The useState hook is a fundamental hook in React that allows you to add state management to your functional component.It lets you to store and update values that changes over time ,enabling dynamic and interactive UI
+
+
+Function passed to `useState()` and `setState()` run twice during development mode to prevent developers from running side effects.
+
+Side Effects in profmming refers to the changes or interaction that occur outside the scope of the function or block of scope
+
+It compares previous state and new state using `Object.is()`,if it find both are same tahen it wuill avaoid re-rendering.
+
+so if yu try to access thye value immediately after setting a state , then yu will get old value as its asynchronous.
+<!-- useState() Hooks -->
