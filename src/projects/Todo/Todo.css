@@ -1,0 +1,29 @@
+body {
+  background: black;
+  color: white;
+}
+
+input {
+  border: 2px solid white;
+  padding: 7px;
+}
+form {
+  width: 100%;
+  display: flex;
+  gap: 5px;
+}
+.todo-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.todo-btn {
+  border: 2px solid;
+  background: red;
+  padding: 7px;
+  border-radius: 8px;
+}
+.todo-btn:hover {
+  cursor: pointer;
+  background-color: rgba(211, 91, 91, 0.664);
+}

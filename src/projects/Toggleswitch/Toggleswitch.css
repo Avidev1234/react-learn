@@ -1,0 +1,77 @@
+/* Center the body and make the switch bigger */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+    background-color: #f0f0f0; /* Optional: background color */
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 150px; /* Make switch wider */
+    height: 60px; /* Make switch taller */
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 60px; /* Make the slider rounded */
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 48px; /* Adjust the size of the circle */
+    width: 48px; /* Adjust the size of the circle */
+    left: 6px; /* Center the circle */
+    bottom: 6px; /* Center the circle */
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(90px); /* Move the circle to the right */
+  }
+  
+  /* Text labels */
+  .switch .on, .switch .off {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+  }
+  
+  .switch .on {
+    left: 10px; /* Position 'ON' on the left */
+  }
+  
+  .switch .off {
+    right: 10px; /* Position 'OFF' on the right */
+  }
+  
