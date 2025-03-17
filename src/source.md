@@ -300,5 +300,24 @@ Side Effects in profmming refers to the changes or interaction that occur outsid
 
 It compares previous state and new state using `Object.is()`,if it find both are same tahen it wuill avaoid re-rendering.
 
-so if yu try to access thye value immediately after setting a state , then yu will get old value as its asynchronous.
+so if yu try to access thye value immediately after setting a state , then yu will get old value as its asynchronous.                           
 <!-- useState() Hooks -->
+
+
+
+<!-- controlled Components -->
+`Controlled component` in React  are those where form data is handled by React component state.
+
+This means:
+`state Management:` The value of the input field is controlled by React state.
+
+`Events Handlers:`Changes to the input field.
+
+`state Updates`:when the user interacts with the form input , React state is updated through event handlers and the input value reflects the current state value.
+
+<!-- controlled Components -->
+
+
+<!-- Uncontrolled Components -->
+
+<!-- Uncontrolled Components -->

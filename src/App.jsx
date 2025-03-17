@@ -2,12 +2,15 @@
 // import Netflixseries from "./component/Netflixseries";
 // import Profile from "./component/Profile";
 
-import Index from "./component/Usestate";
+import { UseStatechallange } from "./projects/Increment/useStatechallange";
+
+// import Index from "./component/Usestate";
 
 // import { ShortCircuit } from "./component/ShortCircuit";
 
 // import { Keys } from "./keys";
 // import { Todo } from "./projects/Todo/Todo";
+
 
 // import { Toggleswitch } from "./projects/Toggleswitch/Toggleswitch";
 
@@ -43,8 +46,9 @@ export const App = () => {
       {/* <Toggleswitch/> */}
       {/* <Keys/> */}
       {/* <ShortCircuit /> */}
-      <Index/>
+      {/* <Index/> */}
       {/* <Todo/> */}
+      <UseStatechallange />
       {/* <State2 /> */}
       {/* <Table /> */}
     </>
