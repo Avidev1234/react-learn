@@ -311,7 +311,7 @@ so if yu try to access thye value immediately after setting a state , then yu wi
 This means:
 `state Management:` The value of the input field is controlled by React state.
 
-`Events Handlers:`Changes to the input field.
+`Events Handlers:`Changes to the input field are handled by React event handlers.
 
 `state Updates`:when the user interacts with the form input , React state is updated through event handlers and the input value reflects the current state value.
 
@@ -319,5 +319,11 @@ This means:
 
 
 <!-- Uncontrolled Components -->
+`Unctrolled components` in the react are those where form data is handled by the DOM itself.
+
+This means:
+Direct DOM Manipulation:The value of Input field is controlled by the DOM .It is not declarative way.
+Event Handling:Changes are directly handled by DOM events
+Accessing Form Data:Form Data is accessed through refs or DOM traversal methods.
 
 <!-- Uncontrolled Components -->

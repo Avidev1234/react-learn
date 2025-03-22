@@ -2,7 +2,9 @@
 // import Netflixseries from "./component/Netflixseries";
 // import Profile from "./component/Profile";
 
-import { UseStatechallange } from "./projects/Increment/useStatechallange";
+import { Controlled } from "./component/controlled/Controlled";
+
+// import { UseStatechallange } from "./projects/Increment/useStatechallange";
 
 // import Index from "./component/Usestate";
 
@@ -48,7 +50,8 @@ export const App = () => {
       {/* <ShortCircuit /> */}
       {/* <Index/> */}
       {/* <Todo/> */}
-      <UseStatechallange />
+      {/* <UseStatechallange /> */}
+      <Controlled/>
       {/* <State2 /> */}
       {/* <Table /> */}
     </>
