@@ -2,7 +2,9 @@
 // import Netflixseries from "./component/Netflixseries";
 // import Profile from "./component/Profile";
 
-import { Controlled } from "./component/controlled/Controlled";
+import { Registration } from "./component/Resgistration";
+
+// import { Controlled } from "./component/controlled/Controlled";
 
 // import { UseStatechallange } from "./projects/Increment/useStatechallange";
 
@@ -51,8 +53,9 @@ export const App = () => {
       {/* <Index/> */}
       {/* <Todo/> */}
       {/* <UseStatechallange /> */}
-      <Controlled/>
+      {/* <Controlled/> */}
       {/* <State2 /> */}
+      <Registration/>
       {/* <Table /> */}
     </>
   );
