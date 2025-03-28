@@ -1,51 +1,32 @@
 import { useState } from "react";
 
-export const Registration = () => {
-  const [firstname, setFirstname] = useState("");
-  const [lastname, setLastname] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [phone, setPhone] = useState("");
+export const Newregistration = () =>  {
+  const [user, setUser] = useState({
+    firstname:"",
+    lastname:"",
+    email:"",
+    password:"",
+    phone:""
+  });
 
 
   const handleInputChange=(e)=>{
 
     const {name,value}=e.target;
-
-    switch (name) {
-      case "firstname":
-        setFirstname(value);
-        break;
-
-      case "lastname":
-        setLastname(value);
-        break;
-
-      case "password":
-        setPassword(value);
-        break;
-
-      case "email":
-        setEmail(value);
-        break;
-
-      case "phone":
-        setPhone(value);
-        break;
-
-    }
+    setUser((prev)=>({...prev,[name]:value})
+    )
   }
  
     const handleFormsubmit=(e)=>{
       e.preventDefault();
-      const FormData={
-        firstname,
-        lastname,
-        password,
-        email,
-        phone
-      };
-      console.log(FormData);
+    //   const FormData={
+    //     firstname,
+    //     lastname,
+    //     password,
+    //     email,
+    //     phone
+    //   };
+    //   console.log(FormData);
       
     }
     
@@ -58,8 +39,8 @@ export const Registration = () => {
   return (
     <>
       <p>
-        Hello my name is {firstname} {lastname} ,my email is {email} and phone
-        is {phone}
+        Hello my name is {user.firstname} {user.lastname} ,my email is {user.email} and phone
+        is {user.phone}
       </p>
       <form onSubmit={handleFormsubmit}>
         <div className="contain">
@@ -72,7 +53,7 @@ export const Registration = () => {
           <input
             type="text"
             placeholder="Enter First Name"
-            value={firstname}
+            value={user.firstname}
             onChange={handleInputChange}
             name="firstname"
             required
@@ -85,7 +66,7 @@ export const Registration = () => {
           <input
             type="text"
             placeholder="Enter Last Name"
-            value={lastname}
+            value={user.lastname}
             onChange={handleInputChange}
             name="lastname"
             required
@@ -97,7 +78,7 @@ export const Registration = () => {
           <input
             type="password"
             placeholder="Enter Password"
-            value={password}
+            value={user.password}
             onChange={handleInputChange}
             name="password"
             required
@@ -109,7 +90,7 @@ export const Registration = () => {
           <input
             type="Email"
             placeholder="Enter Email"
-            value={email}
+            value={user.email}
             onChange={handleInputChange}
             name="email"
             required
@@ -120,7 +101,7 @@ export const Registration = () => {
           </label>
           <input type="phone" 
             placeholder="Enter phone"
-            value={phone}
+            value={user.phone}
             onChange={handleInputChange}
             name="phone" 
             required />

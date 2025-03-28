@@ -2,7 +2,11 @@
 // import Netflixseries from "./component/Netflixseries";
 // import Profile from "./component/Profile";
 
-import { Registration } from "./component/Resgistration";
+import LoginForm from "./component/LoginForm";
+
+// import { Newregistration } from "./component/Newsregistration";
+
+// import { Registration } from "./component/Resgistration";
 
 // import { Controlled } from "./component/controlled/Controlled";
 
@@ -54,8 +58,10 @@ export const App = () => {
       {/* <Todo/> */}
       {/* <UseStatechallange /> */}
       {/* <Controlled/> */}
+      {/* <Newregistration/> */}
       {/* <State2 /> */}
-      <Registration/>
+      {/* <Registration/> */}
+      <LoginForm/>
       {/* <Table /> */}
     </>
   );
