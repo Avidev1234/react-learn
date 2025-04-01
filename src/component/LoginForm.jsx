@@ -14,7 +14,13 @@ function LoginForm() {
   const handleSubmitUser=(e)=>{
     
         e.preventDefault();
-     
+
+        const loginData={
+          username,
+          password
+        };
+        console.log(loginData);
+        
   }
   return (
     <div className="container">

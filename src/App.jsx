@@ -2,7 +2,9 @@
 // import Netflixseries from "./component/Netflixseries";
 // import Profile from "./component/Profile";
 
-import LoginForm from "./component/LoginForm";
+import ContactForm from "./component/ContactForm";
+
+// import LoginForm from "./component/LoginForm";
 
 // import { Newregistration } from "./component/Newsregistration";
 
@@ -61,7 +63,8 @@ export const App = () => {
       {/* <Newregistration/> */}
       {/* <State2 /> */}
       {/* <Registration/> */}
-      <LoginForm/>
+      {/* <LoginForm/> */}
+      <ContactForm/>
       {/* <Table /> */}
     </>
   );
