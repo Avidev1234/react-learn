@@ -21,7 +21,7 @@ function ContactForm() {
   }
   return (
     <div className="container">
-      <div className="cardss">
+      <div className="cards">
         <h1>
           <strong>Contact Form</strong>
         </h1>
