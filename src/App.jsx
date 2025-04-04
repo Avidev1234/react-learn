@@ -2,7 +2,9 @@
 // import Netflixseries from "./component/Netflixseries";
 // import Profile from "./component/Profile";
 
-import ContactForm from "./component/ContactForm";
+import { Index } from "./component/Hooks/UseEffect/Index";
+
+// import ContactForm from "./component/ContactForm";
 
 // import LoginForm from "./component/LoginForm";
 
@@ -64,7 +66,8 @@ export const App = () => {
       {/* <State2 /> */}
       {/* <Registration/> */}
       {/* <LoginForm/> */}
-      <ContactForm/>
+      <Index />
+      {/* <ContactForm/> */}
       {/* <Table /> */}
     </>
   );

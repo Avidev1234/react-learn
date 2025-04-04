@@ -327,3 +327,58 @@ Event Handling:Changes are directly handled by DOM events
 Accessing Form Data:Form Data is accessed through refs or DOM traversal methods.
 
 <!-- Uncontrolled Components -->
+
+
+<!-- UseEffect Hooks -->
+The UseEffect hook in react is used for handling side effects in functional components 
+
+useEffect(()=>{
+    <!-- side effect code here -->
+
+    return()=>{
+        <!-- cleaan up code here (optional) -->
+    };
+},[dependencies]);
+
+
+1.Initial Render: when components mounts useEffect can run its effect function to perform operations like data fetching.
+
+2.Dependencies:The second argument ,an array of dependencies, which determines when the effect should re-run,if any value in this array changes ,the effect will re-run.
+
+3.cleanup:useEffect can return a cleanup function to clean up after the effect, such as unsubscribing from an event or clearing timer.
+
+
+`side Effect`
+A side Effects is any operaton that effects something outside the scope of a function(Pure function).In React side Effects are managed using hooks like `useEffect` to ensure they are handled in a controlled and predictable manner. 
+
+`If yu want to use external source data then use sideEffect Hook.`
+
+Fetching data as a side Effect
+
+When you fetch data in a React component ,you're performing a side Effects because:
+
+External Interaction: You're interacting with an external data source , such as an Api or a server.
+
+State Updates : The fetched data will usually update the component's state , causing a re-render.
+
+Others:-
+
+1) Subscribing to or unsubscribing froma a service.
+2) Updating Browser DOM
+3) Logging data to console
+
+
+let count=0;
+
+function increment(){
+    count+=1;
+}
+
+increment();
+console.log(count)
+
+<!-- UseEffect Hooks -->
+
+
+
+In React , functions are pure ,meaning they return the same output for the same input without causing side Effects
