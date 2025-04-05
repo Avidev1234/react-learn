@@ -2,7 +2,11 @@
 // import Netflixseries from "./component/Netflixseries";
 // import Profile from "./component/Profile";
 
-import { Index } from "./component/Hooks/UseEffect/Index";
+import { CleanUp } from "./component/Hooks/UseEffect/CleanUp";
+
+// import { UseEffectChallange } from "./component/Hooks/UseEffect/UseEffectChallange";
+
+// import { Index } from "./component/Hooks/UseEffect/Index";
 
 // import ContactForm from "./component/ContactForm";
 
@@ -66,7 +70,11 @@ export const App = () => {
       {/* <State2 /> */}
       {/* <Registration/> */}
       {/* <LoginForm/> */}
-      <Index />
+      {/* <Index /> */}
+
+      {/* <UseEffectChallange/> */}
+
+      <CleanUp/>
       {/* <ContactForm/> */}
       {/* <Table /> */}
     </>
