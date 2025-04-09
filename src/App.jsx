@@ -2,7 +2,9 @@
 // import Netflixseries from "./component/Netflixseries";
 // import Profile from "./component/Profile";
 
-import { FetchApi } from "./component/Hooks/UseEffect/FetchApi";
+import { FetchApiobj } from "./component/Hooks/UseEffect/FetchApiobj";
+
+// import { FetchApi } from "./component/Hooks/UseEffect/FetchApi";
 
 // import { CleanUp } from "./component/Hooks/UseEffect/CleanUp";
 
@@ -73,7 +75,9 @@ export const App = () => {
       {/* <Registration/> */}
       {/* <LoginForm/> */}
       {/* <Index /> */}
-      <FetchApi/>
+      {/* <FetchApi/> */}
+
+      <FetchApiobj/>
       {/* <UseEffectChallange/> */}
 
       {/* <CleanUp/> */}
