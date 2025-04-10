@@ -12,7 +12,7 @@ export const Cart = ({ data }) => {
   // destructuring of Data
   // const { data } = props; //to remove `props.data` from below
 
-  const BttonReact = styled.button({
+  const BttonReact = styled.button({ 
     //here `button` is the tagname
     padding: "12px",
     border: "none",

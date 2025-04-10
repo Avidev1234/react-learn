@@ -33,7 +33,7 @@ import  styles from "./Netflix.module.css";
 import { Cart } from "./Cart";
 const Netflixseries = () => {
   return (
-    <> 
+    <>  
       <div className={styles.main_container}>
         {Netflix.map((watch) => { 
           return <Cart key={watch.url} data={watch} />;

@@ -54,14 +54,21 @@ if(loading)
 								<tr>
 									<th>Company</th>
 									<th>Contact</th>
-
 								</tr>
-									{user?.results?.map(p=>(
-										<tr>
+									{user?.results?.map((p,index)=>(
+										<tr key={index}>
 											<td key={p.name}>{p.name}</td>
 											<td>{p.url}</td>
 										</tr>
 									))}
+{/* 
+									{user.game_indices.map((p,index)=>(
+										<tr key={index}>
+											<td>{p.game_index}</td>
+											<td>{p.version.name}</td>
+											<td>{p.version.url}</td>
+										</tr>
+									))}		 */}
 							</div>
 						</tr>
 				</table>
