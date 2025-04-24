@@ -2,7 +2,9 @@
 // import Netflixseries from "./component/Netflixseries";
 // import Profile from "./component/Profile";
 
-import { Pokemon } from "./projects/Pokemon/Pokemon";
+import { UseRef } from "./component/useRefs";
+
+// import { Pokemon } from "./projects/Pokemon/Pokemon";
 
 // import { FetchApiobj } from "./component/Hooks/UseEffect/FetchApiobj";
 
@@ -79,7 +81,8 @@ export const App = () => {
       {/* <Index /> */}
       {/* <FetchApi/> */}
 
-        <Pokemon/>
+<UseRef/>
+        {/* <Pokemon/> */}
       {/* <FetchApiobj/> */}
       {/* <UseEffectChallange/> */}
 

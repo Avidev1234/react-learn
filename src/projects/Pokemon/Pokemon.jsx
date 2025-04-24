@@ -9,13 +9,14 @@ export const Pokemon = () => {
 
   const fetchPOKApi = () => {
     fetch(POKAPI)
-      .then((res) => res.json())
+      .then((res) => res.json())//convert to json
       .then((data) => {
         // Fetch details for each Pokémon
         const promises = data.results.map((pokemon) =>
-          fetch(pokemon.url).then((res) => res.json())
+          fetch(pokemon.url).then((res) => res.json())//url data
         );
-// console.log("promises",promises);
+        console.log("data",data);
+        console.log("promises",promises);
 
         Promise.all(promises)//Promise.all(promises) waits until all individual fetches are done. When complete, allData holds full info for each Pokémon.
           .then((allData) => setPokemon(allData))//setPokemon(allData) updates your component's state with it.

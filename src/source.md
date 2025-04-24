@@ -1,7 +1,10 @@
 <!-- *****************start project on react************* -->
 
 $ npm create vite@latest
+for react 19
 
+bun i react@rc
+bun i react-dom@rc
 <!-- *****************start project on react************* -->
 
 React does not render `false`,`null`,`undefined`,or `NaN` in the DOM.These values ,when used in JSX ,will result in nothing being displayed
@@ -382,3 +385,13 @@ console.log(count)
 
 
 In React , functions are pure ,meaning they return the same output for the same input without causing side Effects
+
+
+`useRef Hooks`
+1)useRef hooks that lets you refrence a value that's not needed for rendering.
+2)Unlike states, it's directly mutable.
+3)You can access value of it's using `yourRef.current`
+
+
+`Uncontrolled components`
+1)Uncontrolled components manage their own state internally and are typically used refs.

@@ -15,4 +15,4 @@ export const PockemonCards = ({ pokemonData }) => {
       </div>
     );
   };
-  
+   
