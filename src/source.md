@@ -387,7 +387,7 @@ console.log(count)
 In React , functions are pure ,meaning they return the same output for the same input without causing side Effects
 
 
-`useRef Hooks`
+`useRef Hooks` comes under unciontrolled 
 1)useRef hooks that lets you refrence a value that's not needed for rendering.
 2)Unlike states, it's directly mutable.
 3)You can access value of it's using `yourRef.current`
@@ -395,3 +395,7 @@ In React , functions are pure ,meaning they return the same output for the same 
 
 `Uncontrolled components`
 1)Uncontrolled components manage their own state internally and are typically used refs.
+
+
+
+`forwordRef()`

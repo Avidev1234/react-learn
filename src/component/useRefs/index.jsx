@@ -1,18 +1,27 @@
+import { useRef } from "react";
 import "./useref.css"
 export const UseRef=()=>{
-    const userName=document.getElementById('username');
-    const password=document.getElementById('password');
-    console.log(userName,password);
+    // const userName=document.getElementById('username');
+    // const password=document.getElementById('password');
+
+
+
+    const userName=useRef(null);
+    const password=useRef(null);
     
+	console.log(userName);
+	
 	const handleFormSubmit=(e)=>{
-        e.preventDefault();
+		e.preventDefault();
+		console.log(userName.current.value,password.current.value);
 	}
 return (
-	<form action="" onSubmit={handleFormSubmit}>
-		<input type="text" id="username" placeholder="Enter...."/>
+	<form onSubmit={handleFormSubmit}>
+		<input type="text" id="username" ref={userName} placeholder="Enter...."/>
 
-		<input type="text" id="password" placeholder="Enter...."/>
+		<input type="password" id="password" ref={password} placeholder="Enter...."/>
 		<button>Submit</button>
 	</form>
 )
 }
+ 
