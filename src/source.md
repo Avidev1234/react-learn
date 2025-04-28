@@ -387,15 +387,20 @@ console.log(count)
 In React , functions are pure ,meaning they return the same output for the same input without causing side Effects
 
 
-`useRef Hooks` comes under unciontrolled 
+`useRef Hooks` is a react Hook taht let you refrence a value that's not needed to render .
+It comes under uncontrolled. 
 1)useRef hooks that lets you refrence a value that's not needed for rendering.
 2)Unlike states, it's directly mutable.
 3)You can access value of it's using `yourRef.current`
 
-
+so when yu use useRef Hooks yu will get one object with a property called current
 `Uncontrolled components`
 1)Uncontrolled components manage their own state internally and are typically used refs.
 
 
 
 `forwordRef()`
+React `forwordRef()` allows parent components to move down (or `forword`) `refs to their childern .` It gives a child component a refrence o DOM entity created by its parent component in React. This helps the child to read and modify the element from any location where it is used.
+
+
+`useId()` Hooks in react js

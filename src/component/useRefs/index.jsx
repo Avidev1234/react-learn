@@ -9,7 +9,7 @@ export const UseRef=()=>{
     const userName=useRef(null);
     const password=useRef(null);
     
-	console.log(userName);
+	console.log(userName,password);
 	
 	const handleFormSubmit=(e)=>{
 		e.preventDefault();
@@ -24,4 +24,4 @@ return (
 	</form>
 )
 }
- 
+  

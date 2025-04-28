@@ -2,7 +2,9 @@
 // import Netflixseries from "./component/Netflixseries";
 // import Profile from "./component/Profile";
 
-import { UseRef } from "./component/useRefs";
+import { ForwordRef } from "./component/useRefs/ForwordRef";
+
+// import { UseRef } from "./component/useRefs";
 
 // import { Pokemon } from "./projects/Pokemon/Pokemon";
 
@@ -53,54 +55,55 @@ import { UseRef } from "./component/useRefs";
 
 // import {EventHandling} from "./component/EventHandling.jsx";
 export const App = () => {
-  // return <h1>Hello React V19</h1>
-  return (
-    <>
-      {/* <Header /> */} 
-      {/* <Netflixseries />  */}
-      {/* <Profile /> */}
-      {/* <Footer /> */}   
-      {/* <EventHandling/> */}
-      {/* <EventProps/> */}
-      {/* <EventPropagation/> */}
-      {/* <State/> */}
-      {/* <DerivedState/> */}
-      {/* <Sibling /> */}
-      {/* <LiftstateUp /> */}
-      {/* <Toggleswitch/> */}
-      {/* <Keys/> */}
-      {/* <ShortCircuit /> */}
-      {/* <Index/> */}
-      {/* <Todo/> */}
-      {/* <UseStatechallange /> */}
-      {/* <Controlled/> */}
-      {/* <Newregistration/> */}
-      {/* <State2 /> */}
-      {/* <Registration/> */}
-      {/* <LoginForm/> */}
-      {/* <Index /> */}
-      {/* <FetchApi/> */}
+	// return <h1>Hello React V19</h1>
+	return (
+		<>
+			{/* <Header /> */} 
+			{/* <Netflixseries /> */}
+			{/* <Profile /> */}
+			{/* <Footer /> */} 
+			{/* <EventHandling/> */}
+			{/* <EventProps/> */}
+			{/* <EventPropagation/> */}
+			{/* <State/> */}
+			{/* <DerivedState/> */}
+			{/* <Sibling /> */}
+			{/* <LiftstateUp /> */}
+			{/* <Toggleswitch/> */}
+			{/* <Keys/> */}
+			{/* <ShortCircuit /> */}
+			{/* <Index/> */}
+			{/* <Todo/> */}
+			{/* <UseStatechallange /> */}
+			{/* <Controlled/> */}
+			{/* <Newregistration/> */}
+			{/* <State2 /> */}
+			{/* <Registration/> */}
+			{/* <LoginForm/> */}
+			{/* <Index /> */}
+			{/* <FetchApi/> */}
 
-<UseRef/>
-        {/* <Pokemon/> */}
-      {/* <FetchApiobj/> */}
-      {/* <UseEffectChallange/> */}
+{/* <UseRef/> */}
+<ForwordRef/>
+	{/* <Pokemon/> */}
+	{/* <FetchApiobj/> */}
+	{/* <UseEffectChallange/> */}
 
-      {/* <CleanUp/> */}
-      {/* <ContactForm/> */}
-      {/* <Table /> */}
-    </>
-  );
+	{/* <CleanUp/> */}
+	{/* <ContactForm/> */}
+	{/* <Table /> */}
+	</>
+	);
 };
 
 
 // export const Sibling = () => {
 
-//   console.log("SiblingComponent");
+// console.log("SiblingComponent");
 
-//   return (
-//       <div className="main-div">
-//           <h2>SiblingComponent </h2>
-//       </div>
-//   )
+// return (
+// <div className="main-div">
+// <h2>SiblingComponent </h2>
+// </div>
+// )
 // }
