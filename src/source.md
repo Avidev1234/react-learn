@@ -404,3 +404,20 @@ React `forwordRef()` allows parent components to move down (or `forword`) `refs 
 
 
 `useId()` Hooks in react js
+
+syntax= `const id=useId()`
+`parameters:`UseId does not take any parameters.
+`Returns:`useId returns a unique ID string associated with in this particular component.
+
+
+`Props drilling` is a pattern in React where yu pass data from a parent component to deeply nested child components through multiple layers of components even if some of the intermediate components don't need the data.
+
+Passing upto 1 or 2 levels is probably fine but might be harder to maintain more than that.
+
+when a prop needs to be passed through many levels, making changes to the component hierarchy or adding/removing props can become cumbersome.
+
+Props drilling may result in boilerplate code as each intermediate component needs to the component hierarchy  or adding/removing props can become cumbersome.
+
+Prop drilling may result in boilerplate code as each intermediate component needs to accept and pass down the props even if it doesn't use them.
+
+It can be fixed using context Api

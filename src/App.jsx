@@ -2,7 +2,11 @@
 // import Netflixseries from "./component/Netflixseries";
 // import Profile from "./component/Profile";
 
-import { ForwordRef } from "./component/useRefs/ForwordRef";
+import { PropDrilling } from "./component/PropDrilling";
+
+// import { UseId } from "./component/useID/UseId";
+
+// import { ForwordRef } from "./component/useRefs/ForwordRef";
 
 // import { UseRef } from "./component/useRefs";
 
@@ -84,7 +88,10 @@ export const App = () => {
 			{/* <FetchApi/> */}
 
 {/* <UseRef/> */}
-<ForwordRef/>
+{/* <ForwordRef/> */}
+	{/* <UseId /> */}
+
+	<PropDrilling/>
 	{/* <Pokemon/> */}
 	{/* <FetchApiobj/> */}
 	{/* <UseEffectChallange/> */}
