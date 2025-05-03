@@ -421,3 +421,22 @@ Props drilling may result in boilerplate code as each intermediate component nee
 Prop drilling may result in boilerplate code as each intermediate component needs to accept and pass down the props even if it doesn't use them.
 
 It can be fixed using context Api
+
+
+
+`context Api` A way to pass data through the component tree without having to pass props down manually at every level.
+
+1. createContext: Created a context oject. (creating a ware house)
+2. provider: A component that provides the context value to its children.(delivery of the product)
+3. useContext(consumer/coustemer): A hoo that allows you to consume a context.
+
+
+Initial value: We don't pass an initial value directly to the context.
+ContextCreation:createContext reaturn a Context component , not a variable . The firstb letter of the context component's name must of the context component's name must be uppercase
+
+Provider Component: The provider is a property of the context component . We pass the value to the provider , which makes it accessible to the child components.
+The value should be passed inside `double curly braces {}{}` if it's more then one .
+
+Consuming context Data: To access the context data , we use the useContext hook. As a parameter , we pass the entire context to useContext to access all values provied by provider. 
+
+In the context Api , the data provided by a context can only be accessed by the components that are its chikdreb within the component tree. This means that any component that needs access to the context data must be a descendant of the provider component that context value.

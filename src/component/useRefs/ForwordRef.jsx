@@ -20,6 +20,7 @@ export const ForwordRef=()=>{
 }
 
 // Data passing from parent to child without rendering the components
+
 // const BeforeReact19=forwardRef((props,ref)=>{
 // const id=useId();
 // return (

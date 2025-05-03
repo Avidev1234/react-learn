@@ -2,7 +2,12 @@
 // import Netflixseries from "./component/Netflixseries";
 // import Profile from "./component/Profile";
 
-import { PropDrilling } from "./component/PropDrilling";
+import { Home } from "./component/ContextApi/Home";
+import { BioProvider } from "./component/ContextApi";
+import { About } from "./component/About";
+import { Servces } from "./component/ContextApi/Services";
+
+// import { PropDrilling } from "./component/PropDrilling";
 
 // import { UseId } from "./component/useID/UseId";
 
@@ -91,7 +96,12 @@ export const App = () => {
 {/* <ForwordRef/> */}
 	{/* <UseId /> */}
 
-	<PropDrilling/>
+	{/* <PropDrilling/> */}
+	<BioProvider>
+		<Home />
+		<About />
+		<Servces />
+	</BioProvider>
 	{/* <Pokemon/> */}
 	{/* <FetchApiobj/> */}
 	{/* <UseEffectChallange/> */}
