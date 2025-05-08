@@ -440,3 +440,13 @@ The value should be passed inside `double curly braces {}{}` if it's more then o
 Consuming context Data: To access the context data , we use the useContext hook. As a parameter , we pass the entire context to useContext to access all values provied by provider. 
 
 In the context Api , the data provided by a context can only be accessed by the components that are its chikdreb within the component tree. This means that any component that needs access to the context data must be a descendant of the provider component that context value.
+
+Rules for creating coustom hooks:-
+
+1. Prefix with use : create hooks must start with the word use. This convention ensures that hooks are easily identifiable amd adhere to the hook rules
+
+2. Use-Build-in Hooks: Custom hooks should utilizing React's build-in hooks to leverage React's state and lifecycle features.
+
+3. Avoid side effects Outside Hooks:Side Effects should be managed within hooks using useEffect or other appropriate hooks.
+
+4. Keep Hooks pure : Hooks should be free from side effects and return value or function that the component can use.
