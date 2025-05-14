@@ -2,6 +2,9 @@ import { useReducer } from "react"
 
 export const ReducerCom=()=>{
 
+    const initialState={
+        count:0
+    };
 
 	const reducer =(state,action)=>{
     console.log(state,action);
@@ -13,9 +16,13 @@ export const ReducerCom=()=>{
     if (action.type==="DECREMENT") {
         return state-1;
     }
+    if (action.type==="RESET") {
+        return state =0;
+    }
 
 	}
-	const [count , dispatch]=useReducer(reducer,0);
+	const [count , dispatch]=useReducer(reducer,initialState);
+	// const [count , dispatch]=useReducer(reducer,0);
 	console.log(useReducer(reducer,0));
 
 	// replacement of useState Hooks is `useReducer`
@@ -29,6 +36,7 @@ export const ReducerCom=()=>{
 			<button onClick={()=>dispatch({type:"INCREMENT"})}>+</button>
             {/* as soon as yu call dispatch function automatically reducer function will be called */}
 			<button onClick={()=>dispatch({type:"DECREMENT"})}>-</button>
+			<button onClick={()=>dispatch({type:"RESET"})}>Reset</button>
 		</div>
 		</>
 	)
