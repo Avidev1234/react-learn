@@ -450,3 +450,20 @@ Rules for creating coustom hooks:-
 3. Avoid side effects Outside Hooks:Side Effects should be managed within hooks using useEffect or other appropriate hooks.
 
 4. Keep Hooks pure : Hooks should be free from side effects and return value or function that the component can use.
+
+
+
+
+
+`useReducer() Hook` for big projects
+
+`const [state , dispatch]=useReducer(reducer,initialState);`
+
+It return an array containing the current state and a dispatch function.
+
+Dispatch function is used to send actions to the reducer , which in turn updates the state based on the action's type and any associated data (payload).
+
+
+Reducer Function:A function that takes the current state and an action as an arguments , and returns a new state.
+
+Initial State:The initial value (The initial state can be a simple object or even derived from a function if the initialization is complex)

@@ -2,10 +2,12 @@
 // import Netflixseries from "./component/Netflixseries";
 // import Profile from "./component/Profile";
 
-import { Home } from "./component/ContextApi/Home";
-import { BioProvider } from "./component/ContextApi";
-import { About } from "./component/About";
-import { Servces } from "./component/ContextApi/Services";
+// import { Home } from "./component/ContextApi/Home";
+// import { BioProvider } from "./component/ContextApi";
+// import { About } from "./component/About";
+// import { Servces } from "./component/ContextApi/Services";
+// import { DarkLight,ThemeProvider } from "./component/ContextApi/DarkLight";
+import { ReducerCom } from "./component/Hooks/Usereducer";
 
 // import { PropDrilling } from "./component/PropDrilling";
 
@@ -97,18 +99,25 @@ export const App = () => {
 	{/* <UseId /> */}
 
 	{/* <PropDrilling/> */}
-	<BioProvider>
+	{/* <BioProvider>
 		<Home />
 		<About />
 		<Servces />
-	</BioProvider>
+	</BioProvider> */}
+
+	{/* <ThemeProvider>
+	   <DarkLight />
+	</ThemeProvider> */}
+
+
 	{/* <Pokemon/> */}
 	{/* <FetchApiobj/> */}
-	{/* <UseEffectChallange/> */}
+	{/* <UseEffectChallange/> */} 
 
 	{/* <CleanUp/> */}
 	{/* <ContactForm/> */}
 	{/* <Table /> */}
+	<ReducerCom />
 	</>
 	);
 };
