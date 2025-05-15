@@ -467,3 +467,21 @@ Dispatch function is used to send actions to the reducer , which in turn updates
 Reducer Function:A function that takes the current state and an action as an arguments , and returns a new state.
 
 Initial State:The initial value (The initial state can be a simple object or even derived from a function if the initialization is complex)
+
+
+`pending`
+ 
+`React.memo()`
+
+1) The React.memo function is used for memoization of functional components.
+2) If the props of a memoized component have not changed , React skips the rendering for that component , using the catched result instead.
+
+3) Do memoizations only when necessary. 
+
+OR
+
+`React.memo()` is a higher-order component that we can use to wrap a components that we do not want to re-render unless props within them changes.
+
+`useMemo`
+`useCallback`
+`pending`
