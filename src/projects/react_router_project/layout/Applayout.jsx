@@ -8,8 +8,8 @@ export const Applayout = () =>{
         <>
          <Header /> 
          {/* <Home/> */}
-         {/* To show the children component in react router we need outlet component */}
-         <Outlet/>
+         {/* To show the children component in react router we need outlet component is used in parent root elements to render their child root elements */}
+         <Outlet/> 
          <Footer />
         </>
     )
