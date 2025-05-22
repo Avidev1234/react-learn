@@ -36,7 +36,7 @@ const Netflixseries = () => {
     <>  
       <div className={styles.main_container}>
         {Netflix.map((watch) => { 
-          return <Cart key={watch.url} data={watch} />;
+          return <Cart key={watch.url} data={watch} />; 
         })}
       </div>
 

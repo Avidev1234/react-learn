@@ -14,7 +14,7 @@ export const Cart = ({ data }) => {
 
   const BttonReact = styled.button({ 
     //here `button` is the tagname
-    padding: "12px",
+    padding: "12px", 
     border: "none",
     fontSize: "18px",
     backgroundColor: "#cbcbcbde",

@@ -2,7 +2,13 @@
 // import Netflixseries from "./component/Netflixseries";
 // import Profile from "./component/Profile";
 
-import { Router } from "./projects/react_router_project/Router";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { Applayout } from "./projects/react_router_project/layout/Applayout";
+import { About } from "./projects/react_router_project/pages/About";
+import { Home } from "./projects/react_router_project/pages/Home";
+import { Contact } from "./projects/react_router_project/pages/Contact";
+
+// import { Router } from "./projects/react_router_project/Router";
 
 // import { Home } from "./component/ContextApi/Home";
 // import { BioProvider } from "./component/ContextApi";
@@ -65,12 +71,32 @@ import { Router } from "./projects/react_router_project/Router";
 // import { EventPropagation } from "./component/EventPropagation";
 
 // import { EventProps } from "./component/EventProps";
-
 // import {EventHandling} from "./component/EventHandling.jsx";
 export const App = () => {
+	const Router=createBrowserRouter([
+			{ 
+				path:"/",
+				element:<Applayout />,
+				children:[
+					{
+						path:"/",
+						element: <Home/>
+					},		
+					{
+						path:"/about",
+						element:<About/>
+					},
+					{
+						path:"/contact",
+						element:<Contact/>
+					}
+				]
+			}
+	])
 	// return <h1>Hello React V19</h1>
 	return (
 		<>
+		<RouterProvider router={Router}/>
 			{/* <Header /> */} 
 			{/* <Netflixseries /> */}
 			{/* <Profile /> */}
@@ -108,7 +134,7 @@ export const App = () => {
 	</BioProvider> */}
 
 	{/* <ThemeProvider>
-	   <DarkLight />
+		<DarkLight />
 	</ThemeProvider> */}
 
 
@@ -121,7 +147,10 @@ export const App = () => {
 	{/* <Table /> */}
 	{/* <ReducerCom /> */}
 
-	<Router/>
+	{/* <Router/> */}
+
+
+	
 	</>
 	);
 };
