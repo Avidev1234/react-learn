@@ -7,6 +7,7 @@ import { Applayout } from "./projects/react_router_project/layout/Applayout";
 import { About } from "./projects/react_router_project/pages/About";
 import { Home } from "./projects/react_router_project/pages/Home";
 import { Contact } from "./projects/react_router_project/pages/Contact";
+import { Error } from "./projects/react_router_project/pages/Error";
 
 // import { Router } from "./projects/react_router_project/Router";
 
@@ -76,7 +77,8 @@ export const App = () => {
 	const Router=createBrowserRouter([
 			{ 
 				path:"/",
-				element:<Applayout />,
+				element:<Applayout />,   
+				errorElement:<Error />,
 				children:[
 					{
 						path:"/",
